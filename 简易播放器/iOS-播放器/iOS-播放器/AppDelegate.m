@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WawaVideoPlayViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    WawaVideoPlayViewController *vc= [[WawaVideoPlayViewController alloc] init];
+    vc.videoURL =[NSURL URLWithString:@"http://2527.vod.myqcloud.com/2527_117134a2343111e5b8f5bdca6cb9f38c.f20.mp4"];
+    vc.content = @"http://2527.vod.myqcloud.com/2527_117134a2343111e5b8f5bdca6cb9f38c.f20.mp4";
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.viewController = navigationController;
+    self.window.rootViewController = self.viewController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -543,6 +543,7 @@
 				0A35C53A1D44CB08003414E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
