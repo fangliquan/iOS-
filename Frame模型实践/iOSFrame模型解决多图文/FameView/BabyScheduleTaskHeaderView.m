@@ -53,7 +53,7 @@
     fromLabel.textColor = WAWA_TEXTCOLOR_GRAY;
     fromLabel.font = [UIFont boldSystemFontOfSize:14];
     fromLabel.numberOfLines = 1;
-    fromLabel.text =  @"班级公告";//fromLabel.text = model.classId > 0 ? @"班级公告": @"园区公告";
+    fromLabel.text =  @"0000";
     self.fromLabel = fromLabel;
     [self addSubview:self.fromLabel];
     
